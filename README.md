@@ -1,5 +1,5 @@
 # Useful-python-codes-for-data-analysis
-This include a number of simple python code for analysing data such as: 
+This include a number of simple python code for analysing data that you might find helpful such as: 
 1. Code to convert an apk to an image
 2. Code for processing json files
 3. Code for removing duplicates from csv
