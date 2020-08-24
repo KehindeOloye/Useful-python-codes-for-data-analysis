@@ -4,7 +4,7 @@ import cv2
 import struct
 
 #Input file name
-input_file_name = 'hello-world.apk';
+input_file_name = 'hello.apk';
 
 #Read the whole file to data
 with open(input_file_name, 'rb') as binary_file:
@@ -37,7 +37,7 @@ pad_len = new_len - data_len
 padded_d = np.hstack((d, np.zeros(pad_len, np.uint8)))
 
 # Reshape 1D array into 2D array with sqrt_len pad_len x sqrt_len (im is going to be a Grayscale image).
-im = np.reshape(padded_d, (sqrt_len, sqrt_len))
+image = np.reshape(padded_d, (sqrt_len, sqrt_len))
 
 # Save image
-cv2.imwrite('im.png', im)
+cv2.imwrite('image.png', image)
